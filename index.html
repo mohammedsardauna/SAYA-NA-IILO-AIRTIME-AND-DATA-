@@ -1,0 +1,61 @@
+📁 1. index.html
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAYA NA'IILO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <header>
+            <h1>SAYA NA'IILO</h1>
+            <p class="tagline">Buy cheap Airtime and Data</p>
+        </header>
+
+        <section class="card">
+            <h2>Buy Data</h2>
+            <label>Select Network</label>
+            <select id="network">
+                <option>MTN</option>
+                <option>Airtel</option>
+                <option>Glo</option>
+                <option>9mobile</option>
+            </select>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number">
+
+            <label>Select Plan</label>
+            <select id="plan">
+                <option value="120">1GB - ₦120</option>
+                <option value="150">1GB - ₦150</option>
+                <option value="180">1GB - ₦180</option>
+            </select>
+
+            <button onclick="buyData()">Buy Now</button>
+        </section>
+
+        <section class="card">
+            <h2>Discount / Cashback</h2>
+            <p>Get 10% - 20% cashback on every purchase</p>
+        </section>
+
+        <section class="card">
+            <h2>Buy Airtime</h2>
+            <input type="tel" id="airtimePhone" placeholder="Phone number">
+            <input type="number" id="amount" placeholder="Amount (₦)">
+            <button onclick="buyAirtime()">Buy Airtime</button>
+        </section>
+
+        <footer>
+            <p>Fast • Secure • Affordable</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
